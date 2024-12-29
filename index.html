@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage repayment calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="responsivo.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="container">
+            <form class="box-mortgage-calculator" id="form">
+                <div class="mortgage-calculator-header">
+                    <h1 class="mortgage-calculator-title">
+                        Mortgage calculator
+                    </h1>
+                    <button type="button" class="btn-clear">Clear All</button>
+                </div>
+                <label for="mortgage-amount" class="mortgage-amount-label">Mortgage amount</label>
+                <div class="mortgage-amount-input" id="mortgage-amount">
+                    <input type="text" class="libra-input" id="libra-input">
+                    <div class="libra">£</div>
+                </div>
+                <div class="mort-term-int-rat">
+                    <div class="mort-term">
+                        <label for="box-radio-input" class="mort-term-label">Mortgage Term</label>
+                        <div class="box-years-input" id="box-years-input">
+                            <input type="text" class="years-input" id="years-input">
+                            <div class="years">years</div>
+                        </div>
+                    </div>
+                    <div class="int-rate">
+                        <label for="box-percentagem-input" class="int-rate-label">Interest Rate</label>
+                        <div class="box-percentagem-input" id="box-percentagem-input">
+                            <input type="text" class="percentagem-input" id="percentagem-input">
+                            <div class="percentagem">%</div>
+                        </div>
+                    </div>
+                </div>
+                <label for="box-mortgage-type" class="mortgage-type">Mortgage Type</label>
+                <div class="box-mortgage-type" id="box-mortgage-type">
+                    <div class="box-radio">
+                        <input type="radio" name="mortgage-type" id="repayment" class="box-radio-input">
+                        <label for="repayment" class="box-radio-label">Repayment</label>
+                    </div>
+                    <div class="box-radio">
+                        <input type="radio" name="mortgage-type" id="int-only" class="box-radio-input">
+                        <label for="int-only" class="box-radio-label">Interest Only</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn-cal"><img src="./assets/icon/icon-calculator.svg"
+                        alt="icon of a calculator"><span id="span-btn"></span></button>
+            </form>
+            <div class="box-show-result" style="display: flex;">
+                <img src="./assets/image/illustration-empty.svg" alt="" class="img-cal-empty">
+                <h2 class="show-result-title">Results shown here</h2>
+                <p class="result-show-text">Complete the form and click “calculate repayments” to see what your monthly
+                    repayments would be.
+                </p>
+            </div>
+            <div class="box-your-results" style="display: none;">
+                <h2 class=" box-title-your-results">Your results</h2>
+                <p class="text-your-results">Your results are shown below based on the information you provided. To
+                    adjust the results, edit the form and click “calculate repayments” again.</p>
+                <div class="box-results-numbers">
+                    <p class="box-your-results-text"></p>
+                    <div class="results"></div>
+                    <hr class="your-results-line">
+                    <p class="box-your-results-repay"></p>
+                    <div class="repay"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

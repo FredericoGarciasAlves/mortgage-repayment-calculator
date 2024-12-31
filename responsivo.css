@@ -1,1 +1,199 @@
-@media(max-width:)
+@media (max-width: 768px) {
+    .main {
+        width: 76.8rem;
+        height: 100%;
+        padding: 4rem;
+    }
+
+    .main .container {
+        width: 68.8rem;
+        height: 100%;
+        flex-direction: column;
+        height: fit-content;
+        position: absolute;
+        top: 0;
+        border-top-left-radius: 0rem;
+        border-top-right-radius: 0rem;
+    }
+
+    .main .container .box-mortgage-calculator .mortgage-calculator-header {
+        width: 60.8rem;
+    }
+    .main .container .box-mortgage-calculator .mortgage-amount-input {
+        width: 60.8rem;
+    }
+
+    .main
+        .container
+        .box-mortgage-calculator
+        .mortgage-amount-input
+        .libra-input {
+        width: 60.8rem;
+    }
+
+    .main
+        .container
+        .box-mortgage-calculator
+        .mort-term-int-rat
+        .mort-term
+        .box-years-input {
+        width: 29.2rem;
+    }
+
+    .main
+        .container
+        .box-mortgage-calculator
+        .mort-term-int-rat
+        .mort-term
+        .box-years-input
+        .years-input {
+        width: 29.2rem;
+    }
+
+    .main
+        .container
+        .box-mortgage-calculator
+        .mort-term-int-rat
+        .int-rate
+        .box-percentagem-input {
+        width: 29.2rem;
+    }
+
+    .main
+        .container
+        .box-mortgage-calculator
+        .mort-term-int-rat
+        .int-rate
+        .box-percentagem-input
+        .percentagem-input {
+        width: 29.2remx;
+    }
+
+    .main .container .box-mortgage-calculator .box-mortgage-type .box-radio {
+        width: 60.8rem;
+    }
+
+    .main .container .box-show-result {
+        position: static;
+        border-bottom-left-radius: 2rem;
+        border-top-right-radius: 0rem;
+        width: 100%;
+    }
+
+    .main .container .box-your-results {
+        position: static;
+        width: 100%;
+        border-bottom-left-radius: 2rem;
+        border-top-right-radius: 0rem;
+    }
+
+    .main .container .box-your-results .box-results-numbers {
+        width: 60.8rem;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        width: 37.5rem;
+    }
+
+    .main {
+        width: 37.5rem;
+    }
+
+    .main .container {
+        width: 37.5rem;
+        height: 100%;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .main .container .box-mortgage-calculator {
+        padding: 3.2rem 2.4rem;
+    }
+
+    .main .container .box-mortgage-calculator .mortgage-calculator-header {
+        width: 32.7rem;
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: start;
+        margin-bottom: 2.4rem;
+    }
+
+    .main .container .box-mortgage-calculator .mortgage-amount-input {
+        width: 32.7rem;
+    }
+
+    .main
+        .container
+        .box-mortgage-calculator
+        .mortgage-amount-input
+        .libra-input {
+        width: 32.7rem;
+    }
+
+    .main .container .box-mortgage-calculator .mort-term-int-rat {
+        flex-direction: column;
+        row-gap: 2.4rem;
+    }
+
+    .main
+        .container
+        .box-mortgage-calculator
+        .mort-term-int-rat
+        .mort-term
+        .box-years-input {
+        width: 32.7rem;
+    }
+
+    .main
+        .container
+        .box-mortgage-calculator
+        .mort-term-int-rat
+        .mort-term
+        .box-years-input
+        .years-input {
+        width: 32.7rem;
+    }
+
+    .main
+        .container
+        .box-mortgage-calculator
+        .mort-term-int-rat
+        .int-rate
+        .box-percentagem-input {
+        width: 32.7rem;
+    }
+
+    .main
+        .container
+        .box-mortgage-calculator
+        .mort-term-int-rat
+        .int-rate
+        .box-percentagem-input
+        .percentagem-input {
+        width: 32.7rem;
+    }
+
+    .main .container .box-mortgage-calculator .box-mortgage-type .box-radio {
+        width: 32.7rem;
+    }
+
+    .main .container .box-show-result {
+        border-bottom-right-radius: 0rem;
+        border-bottom-left-radius: 0rem;
+    }
+
+    .main .container .box-your-results {
+        position: static;
+        width: 100%;
+        border-bottom-left-radius: 2rem;
+        border-top-right-radius: 0rem;
+        padding: 3.2rem 2.4rem;
+        border-bottom-right-radius: 0rem;
+        border-bottom-left-radius: 0rem;
+    }
+
+    .main .container .box-your-results .box-results-numbers {
+        width: 32.7rem;
+    }
+}

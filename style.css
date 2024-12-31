@@ -13,15 +13,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .main .container {
     width: 100.8rem;
-    height: 60.6rem;
+    height: fit-content;
     background-color: #ffffff;
     border-radius: 2rem;
     display: flex;
+    position: relative;
 }
 
 .main .container .box-mortgage-calculator {
@@ -36,25 +36,33 @@ body {
     margin-bottom: 40px;
 }
 
-.main .container .box-mortgage-calculator .mortgage-calculator-header .mortgage-calculator-title {
+.main
+    .container
+    .box-mortgage-calculator
+    .mortgage-calculator-header
+    .mortgage-calculator-title {
     font-family: "Plus jakarta Sans Bold", sans-serif;
     font-size: 2.4rem;
     color: #133041;
 }
 
-.main .container .box-mortgage-calculator .mortgage-calculator-header .btn-clear {
+.main
+    .container
+    .box-mortgage-calculator
+    .mortgage-calculator-header
+    .btn-clear {
     height: 1.9rem;
     background-color: #ffffff;
     color: #4e6e7e;
     border: none;
     border-bottom: 1px solid #4e6e7e;
-    font-family: 'Plus jakarta Sans medium', sans-serif;
+    font-family: "Plus jakarta Sans medium", sans-serif;
     font-size: 1.5rem;
 }
 
 .main .container .box-mortgage-calculator .mortgage-amount-label {
     font-size: 1.6rem;
-    font-family: 'Plus jakarta Sans medium', sans-serif;
+    font-family: "Plus jakarta Sans medium", sans-serif;
     color: #4e6e7e;
 }
 
@@ -77,9 +85,26 @@ body {
     outline: none;
 }
 
+.main
+    .container
+    .box-mortgage-calculator
+    .mortgage-amount-input
+    .libra-input:hover {
+    transition: ease-in-out 0.5s;
+    border: 1px solid #d8db2f;
+}
+.main
+    .container
+    .box-mortgage-calculator
+    .mortgage-amount-input
+    .libra-input:-webkit-autofill {
+    background-color: #fff !important;
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+
 .main .container .box-mortgage-calculator .mortgage-amount-input .libra {
     width: 4.4rem;
-    height: 4.75rem;
+    height: 4.8rem;
     background-color: #e4f4fd;
     color: #4e6e7e;
     font-size: 2rem;
@@ -96,7 +121,7 @@ body {
 
 .main .container .box-mortgage-calculator .text-field-requerid-amount {
     font-size: 1.4rem;
-    font-family: 'Plus jakarta Sans medium', sans-serif;
+    font-family: "Plus jakarta Sans medium", sans-serif;
     color: #d73328;
 }
 
@@ -106,13 +131,23 @@ body {
     margin-top: 2.4rem;
 }
 
-.main .container .box-mortgage-calculator .mort-term-int-rat .mort-term .mort-term-label {
+.main
+    .container
+    .box-mortgage-calculator
+    .mort-term-int-rat
+    .mort-term
+    .mort-term-label {
     font-size: 1.6rem;
     color: #4e6e7e;
-    font-family: 'Plus jakarta Sans medium', sans-serif;
+    font-family: "Plus jakarta Sans medium", sans-serif;
 }
 
-.main .container .box-mortgage-calculator .mort-term-int-rat .mort-term .box-years-input {
+.main
+    .container
+    .box-mortgage-calculator
+    .mort-term-int-rat
+    .mort-term
+    .box-years-input {
     margin-top: 1.2rem;
     margin-bottom: 1.2rem;
     width: 20rem;
@@ -120,7 +155,23 @@ body {
     position: relative;
 }
 
-.main .container .box-mortgage-calculator .mort-term-int-rat .mort-term .box-years-input .years-input {
+.main
+    .container
+    .box-mortgage-calculator
+    .mort-term-int-rat
+    .mort-term
+    .box-years-input:hover {
+    transition: ease-in-out 0.5s;
+    border: 1px solid #d8db2f;
+}
+
+.main
+    .container
+    .box-mortgage-calculator
+    .mort-term-int-rat
+    .mort-term
+    .box-years-input
+    .years-input {
     width: 20rem;
     height: 5rem;
     border-radius: 1rem;
@@ -131,7 +182,24 @@ body {
     outline: none;
 }
 
-.main .container .box-mortgage-calculator .mort-term-int-rat .mort-term .box-years-input .years {
+.main
+    .container
+    .box-mortgage-calculator
+    .mort-term-int-rat
+    .mort-term
+    .box-years-input
+    .years-input:-webkit-autofill {
+    background-color: #fff !important;
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+
+.main
+    .container
+    .box-mortgage-calculator
+    .mort-term-int-rat
+    .mort-term
+    .box-years-input
+    .years {
     width: 8rem;
     height: 4.8rem;
     background-color: #e4f4fd;
@@ -146,24 +214,37 @@ body {
     border-bottom-right-radius: 1rem;
     font-size: 2rem;
     font-family: "Plus jakarta Sans Bold", sans-serif;
-
 }
 
-.main .container .box-mortgage-calculator .mort-term-int-rat .mort-term .text-field-requerid-term {
+.main
+    .container
+    .box-mortgage-calculator
+    .mort-term-int-rat
+    .mort-term
+    .text-field-requerid-term {
     font-size: 1.4rem;
-    font-family: 'Plus jakarta Sans medium', sans-serif;
+    font-family: "Plus jakarta Sans medium", sans-serif;
     color: #d73328;
     margin-bottom: 2.4rem;
 }
 
-
-.main .container .box-mortgage-calculator .mort-term-int-rat .int-rate .int-rate-label {
+.main
+    .container
+    .box-mortgage-calculator
+    .mort-term-int-rat
+    .int-rate
+    .int-rate-label {
     font-size: 1.6rem;
     color: #4e6e7e;
-    font-family: 'Plus jakarta Sans medium', sans-serif;
+    font-family: "Plus jakarta Sans medium", sans-serif;
 }
 
-.main .container .box-mortgage-calculator .mort-term-int-rat .int-rate .box-percentagem-input {
+.main
+    .container
+    .box-mortgage-calculator
+    .mort-term-int-rat
+    .int-rate
+    .box-percentagem-input {
     width: 20rem;
     height: 5rem;
     position: relative;
@@ -171,7 +252,13 @@ body {
     margin-bottom: 1.2rem;
 }
 
-.main .container .box-mortgage-calculator .mort-term-int-rat .int-rate .box-percentagem-input .percentagem-input {
+.main
+    .container
+    .box-mortgage-calculator
+    .mort-term-int-rat
+    .int-rate
+    .box-percentagem-input
+    .percentagem-input {
     width: 20rem;
     height: 5rem;
     border-radius: 1rem;
@@ -182,8 +269,35 @@ body {
     outline: none;
 }
 
+.main
+    .container
+    .box-mortgage-calculator
+    .mort-term-int-rat
+    .int-rate
+    .box-percentagem-input
+    .percentagem-input {
+    transition: ease-in-out 0.5s;
+    border: 1px solid #d8db2f;
+}
 
-.main .container .box-mortgage-calculator .mort-term-int-rat .int-rate .box-percentagem-input .percentagem {
+.main
+    .container
+    .box-mortgage-calculator
+    .mort-term-int-rat
+    .int-rate
+    .box-percentagem-input
+    .percentagem-input:-webkit-autofill {
+    background-color: #fff !important;
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+
+.main
+    .container
+    .box-mortgage-calculator
+    .mort-term-int-rat
+    .int-rate
+    .box-percentagem-input
+    .percentagem {
     width: 5rem;
     height: 4.8rem;
     display: flex;
@@ -200,9 +314,14 @@ body {
     font-family: "Plus jakarta Sans Bold", sans-serif;
 }
 
-.main .container .box-mortgage-calculator .mort-term-int-rat .int-rate .text-field-requerid-rate {
+.main
+    .container
+    .box-mortgage-calculator
+    .mort-term-int-rat
+    .int-rate
+    .text-field-requerid-rate {
     font-size: 1.4rem;
-    font-family: 'Plus jakarta Sans medium', sans-serif;
+    font-family: "Plus jakarta Sans medium", sans-serif;
     color: #d73328;
     margin-bottom: 2.4rem;
 }
@@ -225,15 +344,18 @@ body {
     margin-top: 1.2rem;
 }
 
-
 .main .container .box-mortgage-calculator .box-mortgage-type .box-radio:hover {
     transition: ease-in-out 0.5s;
     border: 1px solid #d1d357;
 }
 
-.main .container .box-mortgage-calculator .box-mortgage-type .box-radio .box-radio-input {
+.main
+    .container
+    .box-mortgage-calculator
+    .box-mortgage-type
+    .box-radio
+    .box-radio-input {
     border: 1px solid #4e6e7e;
-    /* Remove o estilo padrão */
     appearance: none;
     width: 20px;
     height: 20px;
@@ -244,8 +366,13 @@ body {
     transition: 0.3s ease;
 }
 
-.main .container .box-mortgage-calculator .box-mortgage-type .box-radio .box-radio-input:checked::after {
-    content: '';
+.main
+    .container
+    .box-mortgage-calculator
+    .box-mortgage-type
+    .box-radio
+    .box-radio-input:checked::after {
+    content: "";
     display: block;
     width: 10px;
     height: 10px;
@@ -257,29 +384,53 @@ body {
     left: 0.2px;
 }
 
-.main .container .box-mortgage-calculator .box-mortgage-type .box-radio .box-radio-input:checked {
+.main
+    .container
+    .box-mortgage-calculator
+    .box-mortgage-type
+    .box-radio
+    .box-radio-input:checked {
     border-color: #e2e473;
     background-color: #ffffff;
 }
 
-.main .container .box-mortgage-calculator .box-mortgage-type .box-radio .box-radio-label {
+.main
+    .container
+    .box-mortgage-calculator
+    .box-mortgage-type
+    .box-radio
+    .box-radio-label {
     font-size: 1.6rem;
     font-family: "Plus jakarta Sans Bold", sans-serif;
     color: #133041;
 }
 
-.main .container .box-mortgage-calculator .box-mortgage-type .box-radio .box-radio-input {
+.main
+    .container
+    .box-mortgage-calculator
+    .box-mortgage-type
+    .box-radio
+    .box-radio-input {
     border: 1px solid #4e6e7e;
 }
 
-.main .container .box-mortgage-calculator .box-mortgage-type .box-radio .box-radio-label {
+.main
+    .container
+    .box-mortgage-calculator
+    .box-mortgage-type
+    .box-radio
+    .box-radio-label {
     font-size: 1.6rem;
     font-family: "Plus jakarta Sans Bold", sans-serif;
     color: #133041;
 }
 
-
-.main .container .box-mortgage-calculator .box-mortgage-type .box-radio .int-only-label {
+.main
+    .container
+    .box-mortgage-calculator
+    .box-mortgage-type
+    .box-radio
+    .int-only-label {
     font-size: 1.6rem;
     font-family: "Plus jakarta Sans Bold", sans-serif;
     color: #133041;
@@ -287,7 +438,7 @@ body {
 
 .main .container .box-mortgage-calculator .text-field-requerid-box-radio {
     font-size: 1.4rem;
-    font-family: 'Plus jakarta Sans medium', sans-serif;
+    font-family: "Plus jakarta Sans medium", sans-serif;
     color: #d73328;
     margin-top: 1.2rem;
 }
@@ -313,7 +464,8 @@ body {
 
 .main .container .box-show-result {
     width: 50.4rem;
-    height: 60.6rem;
+    height: 100%;
+    position: absolute;
     padding: 4rem;
     background-color: #133041;
     display: flex;
@@ -323,6 +475,7 @@ body {
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
     border-bottom-left-radius: 9rem;
+    right: 0;
 }
 
 .main .container .box-show-result .show-result-title {
@@ -342,7 +495,8 @@ body {
 
 .main .container .box-your-results {
     width: 50.4rem;
-    height: 60.6rem;
+    height: 100%;
+    position: absolute;
     padding: 4rem;
     background-color: #133041;
     display: flex;
@@ -361,7 +515,7 @@ body {
 }
 
 .main .container .box-your-results .text-your-results {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-family: "Plus jakarta Sans regular", sans-serif;
     color: #9abed5;
     line-height: 2rem;
@@ -393,9 +547,14 @@ body {
 .main .container .box-your-results .box-results-numbers .your-results-line {
     margin-top: 3.2rem;
     margin-bottom: 3.2rem;
+    border: 1px solid #9abed5;
 }
 
-.main .container .box-your-results .box-results-numbers .box-your-results-repay {
+.main
+    .container
+    .box-your-results
+    .box-results-numbers
+    .box-your-results-repay {
     color: #9abed5;
     font-family: "Plus jakarta Sans regular", sans-serif;
     font-size: 1.6rem;
